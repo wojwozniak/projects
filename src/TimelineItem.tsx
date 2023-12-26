@@ -17,7 +17,7 @@ const TimelineItem: FC<TimelineItemProps> = ({ projectName, description, link, l
       {link &&
         <a href={link}
           target="_blank"
-          className="text-gold hover:underline">
+          className="text-gold hover:underline mr-5">
           {linkTitle}
         </a>
       }
