@@ -13,21 +13,34 @@ const App = () => {
       <TimelineSection title="June 2023" children={
         <TimelineItem
           projectName='Job as fullstack developer'
-          description='Thanks to my portfolio I managed to get my first job as fullstack developer.' />
+          description='Thanks to my portfolio I managed to get my first job. I work as an full-stack developer, updating app and creating new features (on every level - from designing database, updating API, through backend to frondend). For this job i mostly use C# and Blazor.' />
       } />
-      <TimelineSection title = "October 2022 - June 2023" children = {
-        <TimelineItem
-          projectName='University projects'
-          description='During the first year of my studies I focused on learning and doing projects for university - I created a lot of small projects, mostly in C and C++. At the end of the first year I created portfolio website. In this time period I also started doing leetcode algorithms and finished two Freecodecamp python courses (basic python and machine learning).' />
+      <TimelineSection title="October 2022 - June 2023" children={
+        <>
+          <TimelineItem
+            projectName='University projects'
+            description='During the first year of my studies I focused on learning and doing projects for university - I created a lot of small projects, mostly in C and C++  (RAM Machine Simulator being the biggest one). At the end of the first year I created portfolio website.' />
+          <TimelineItem 
+          projectName='Leetcode & Python Course'
+          description='In the second semester i started learning Python and doing leetcode algorithms (mostly with C and javascript). I finished two Python Course on freecodecamp and did get a certificate for them.'
+          link='https://www.freecodecamp.org/certification/wojwozniak/scientific-computing-with-python-v7'
+          linkTitle='Python Certificate'
+          secondLink='https://leetcode.com/wojwozniak/'
+          secondLinkTitle='Leetcode Profile'
+           />
+        </>
+
       } />
       <TimelineSection title="September - October 2022" children={
         <>
           <TimelineItem
             projectName='Started learning at University of Wrocław'
-            description='I started studying Computer Science at University of Wrocław.' />
+            description='I started studying Computer Science at University of Wrocław - more abou that in newer posts.' />
           <TimelineItem
-           projectName='Backend course'
-           description='I kept learning on Freecodecamp website - this time I learned how to create backend apps with node.js (and a lot of libraries)' />
+            projectName='Backend course'
+            description='I kept learning on Freecodecamp website - this time I learned how to create backend apps with node.js (and a lot of libraries)'
+            link='https://www.freecodecamp.org/certification/wojwozniak/back-end-development-and-apis'
+            linkTitle='Certificate' />
         </>
       } />
       <TimelineSection title="July - August 2022"
