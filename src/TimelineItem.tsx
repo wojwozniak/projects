@@ -4,10 +4,12 @@ interface TimelineItemProps {
   projectName: string;
   description: string;
   link?: string;
+  linkTitle?: string;
   secondLink?: string;
+  secondLinkTitle?: string;
 }
 
-const TimelineItem: FC<TimelineItemProps> = ({ projectName, description, link, secondLink }) => {
+const TimelineItem: FC<TimelineItemProps> = ({ projectName, description, link, linkTitle, secondLink, secondLinkTitle }) => {
   return (
     <div className="border-l-4 border-gold pl-4 mb-4">
       <h3 className="text-2xl font-medium">{projectName}</h3>
@@ -16,14 +18,14 @@ const TimelineItem: FC<TimelineItemProps> = ({ projectName, description, link, s
         <a href={link}
           target="_blank"
           className="text-gold hover:underline">
-          Link
+          {linkTitle}
         </a>
       }
       {secondLink &&
         <a href={secondLink}
           target="_blank"
           className="text-gold hover:underline">
-          Link
+          {secondLinkTitle}
         </a>
       }
     </div>
