@@ -20,14 +20,14 @@ const App = () => {
           <TimelineItem
             projectName='University projects'
             description='During the first year of my studies I focused on learning and doing projects for university - I created a lot of small projects, mostly in C and C++  (RAM Machine Simulator being the biggest one). At the end of the first year I created portfolio website.' />
-          <TimelineItem 
-          projectName='Leetcode & Python Course'
-          description='In the second semester i started learning Python and doing leetcode algorithms (mostly with C and javascript). I finished two Python Course on freecodecamp and did get a certificate for them.'
-          link='https://www.freecodecamp.org/certification/wojwozniak/scientific-computing-with-python-v7'
-          linkTitle='Python Certificate'
-          secondLink='https://leetcode.com/wojwozniak/'
-          secondLinkTitle='Leetcode Profile'
-           />
+          <TimelineItem
+            projectName='Leetcode & Python Course'
+            description='In the second semester i started learning Python and doing leetcode algorithms (mostly with C and javascript). I finished two Python Course on freecodecamp and did get a certificate for them.'
+            link='https://www.freecodecamp.org/certification/wojwozniak/scientific-computing-with-python-v7'
+            linkTitle='Python Certificate'
+            secondLink='https://leetcode.com/wojwozniak/'
+            secondLinkTitle='Leetcode Profile'
+          />
         </>
 
       } />
