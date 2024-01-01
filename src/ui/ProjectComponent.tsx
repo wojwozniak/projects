@@ -5,6 +5,7 @@ interface ProjectProps {
   title: string;
   date: string;
   screenshotUrl: string;
+  techStack: string;
   description: JSX.Element;
 }
 
@@ -12,6 +13,7 @@ const ProjectComponent: React.FC<ProjectProps> = ({
   title,
   date,
   screenshotUrl,
+  techStack,
   description,
 }) => {
   const [open, setOpen] = useState(false);
@@ -34,6 +36,7 @@ const ProjectComponent: React.FC<ProjectProps> = ({
         <div className="p-4 style={{ borderBottom: `1px solid var(--color-border)`, backgroundColor: 'var(--color-background)', color: 'var(--color-text)' }}">
           <p className="text-lg font-bold">{title}</p>
           <p className="text-sm text-gray-600">{date}</p>
+          <p className="text-sm text-gray-600">{techStack}</p>
         </div>
       </div>
 
