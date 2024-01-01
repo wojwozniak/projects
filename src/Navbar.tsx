@@ -11,7 +11,7 @@ const Navbar: React.FC = () => {
       <h1>wojwozniak | My projects</h1>
       <div>
         <span className="mr-2">
-          {theme !== 'dark' ? 'Dark mode' : 'Light mode'}
+          {theme === 'dark' ? 'Dark mode on' : 'Dark mode off'}
         </span>
         <Switch checked={theme === 'dark'}
           onChange={toggleTheme} />
