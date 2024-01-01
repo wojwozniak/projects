@@ -23,8 +23,24 @@ const ProjectPopup: React.FC<ProjectPopupProps> = ({
   description,
 }) => {
   return (
-    <Dialog onClose={onClose} open={open} maxWidth="sm" fullWidth>
-      <DialogTitle sx={{ textAlign: 'center', m: 0, p: 2 }}>
+    <Dialog
+      onClose={onClose}
+      open={open}
+      maxWidth="sm"
+      fullWidth
+      sx={{
+        '& .MuiDialog-container .MuiPaper-rounded': {
+          borderRadius: 'var(--border-radius)',
+        },
+      }}
+    >
+      <DialogTitle sx={{
+        textAlign: 'center',
+        m: 0, p: 2,
+        backgroundColor: 'var(--color-background)',
+        color: 'var(--color-text)',
+        borderBottom: `1px solid var(--color-divider)`,
+      }}>
         <strong>{title}</strong> <em>({date})</em>
         <IconButton
           aria-label="close"
@@ -33,13 +49,28 @@ const ProjectPopup: React.FC<ProjectPopupProps> = ({
             position: 'absolute',
             right: 8,
             top: 8,
-            color: (theme) => theme.palette.grey[500],
+            backgroundColor: 'transparent',
+            color: 'var(--color-text)',
+            '&:hover': {
+              backgroundColor: 'var(--color-border)',
+            },
           }}
         >
           <CloseIcon />
         </IconButton>
       </DialogTitle>
-      <DialogContent dividers sx={{ position: 'relative' }}>
+      <DialogContent
+        dividers
+        sx={{
+          position: 'relative',
+          backgroundColor: 'var(--color-background)',
+          color: 'var(--color-text)',
+          '& .MuiDialogContent-dividers': {
+            borderTop: `1px solid var(--color-divider)`,
+            borderBottom: `1px solid var(--color-divider)`,
+          },
+        }}
+      >
         <img src={screenshotUrl} alt={`Screenshot of ${title}`}
           style={{
             maxWidth: '100%',

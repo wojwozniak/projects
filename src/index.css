@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --color-text: #000;
+  --color-background: #fff;
+  --color-border: #ddd;
+  --color-divider: rgba(0, 0, 0, 0.12);
+  --border-radius: 4px; 
+}
+
+[data-theme="dark"] {
+  --color-text: #fff;
+  --color-background: #121212;
+  --color-border: #333;
+  --color-divider: rgba(255, 255, 255, 0.12);
+  --border-radius: 8px;
+}
