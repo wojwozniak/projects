@@ -79,7 +79,10 @@ const ProjectPopup: React.FC<ProjectPopupProps> = ({
             marginLeft: 'auto',
             marginRight: 'auto',
             marginBottom: '20px'
-          }} />
+          }}
+          onError={(e: React.SyntheticEvent<HTMLImageElement>) =>
+            e.currentTarget.src = 'https://placehold.co/400x200'}
+        />
         <div style={{ textAlign: 'center' }}>
           {description}
         </div>
