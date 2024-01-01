@@ -1,107 +1,26 @@
 import Footer from './Footer';
-import TimelineSection from './TimelineSection';
-import TimelineItem from './TimelineItem';
+import ProjectComponent from './ui/ProjectComponent';
 
-const App = () => {
+const MyApp = () => {
   return (
-    <div className="bg-white text-black p-8 w-full h-fit min-h-screen pb-2">
-      <h1 className="text-4xl font-bold">Projects and my timeline</h1>
-      <p className="text-l mt-2">Simple list of projects that I have created - in form of a developer timeline ^^</p>
-      <TimelineSection title="July 2023 - December 2023" children={
-        <TimelineItem projectName='Work in progress' description='I am finishing 5 different projects - they will soon appear here ^^' />
-      } />
-      <TimelineSection title="June 2023" children={
-        <TimelineItem
-          projectName='Job as fullstack developer'
-          description='Thanks to my portfolio I managed to get my first job. I work as an full-stack developer, updating app and creating new features (on every level - from designing database, updating API, through backend to frondend). For this job i mostly use C# and Blazor.' />
-      } />
-      <TimelineSection title="October 2022 - June 2023" children={
-        <>
-          <TimelineItem
-            projectName='University projects'
-            description='During the first year of my studies I focused on learning and doing projects for university - I created a lot of small projects, mostly in C and C++  (RAM Machine Simulator being the biggest one). At the end of the first year I created portfolio website.' />
-          <TimelineItem
-            projectName='Leetcode & Python Course'
-            description='In the second semester i started learning Python and doing leetcode algorithms (mostly with C and javascript). I finished two Python Course on freecodecamp and did get a certificate for them.'
-            link='https://www.freecodecamp.org/certification/wojwozniak/scientific-computing-with-python-v7'
-            linkTitle='Python Certificate'
-            secondLink='https://leetcode.com/wojwozniak/'
-            secondLinkTitle='Leetcode Profile'
-          />
-        </>
-
-      } />
-      <TimelineSection title="September - October 2022" children={
-        <>
-          <TimelineItem
-            projectName='Started learning at University of Wrocław'
-            description='I started studying Computer Science at University of Wrocław - more abou that in newer posts.' />
-          <TimelineItem
-            projectName='Backend course'
-            description='I kept learning on Freecodecamp website - this time I learned how to create backend apps with node.js (and a lot of libraries)'
-            link='https://www.freecodecamp.org/certification/wojwozniak/back-end-development-and-apis'
-            linkTitle='Certificate' />
-        </>
-      } />
-      <TimelineSection title="July - August 2022"
-        children={
-          <TimelineItem
-            projectName='Scout website'
-            description='I reworked website of my old scout group. I used Wordpress as a CMS and created a custom theme for it. I used HTML, CSS, JavaScript and PHP to create it. I also teached admins how to use it and recorded a video tutorial for them.'
-            link='https://zlotaosemkadabrowagornicza.zhp.pl/'
-            linkTitle='Website'
-            secondLink='https://github.com/wojwozniak/wp-zlotaosemka'
-            secondLinkTitle='Github Repository' />
-        } />
-      <TimelineSection title="June 2022"
-        children={
-          <TimelineItem
-            projectName='Data Visualization Course'
-            description='I finished a data visualization course on FreeCodeCamp. I learned how to use D3.js library to create charts and graphs. I made 5 websites to prove my knowledge. Some time later i reworked them into a single website based on Vue.js framework. I linked the website below - best viewed on desktop as charts are interactive.'
-            link='https://wojwozniak.com/d3-charts/'
-            linkTitle='D3.js Charts'
-            secondLink='https://www.freecodecamp.org/certification/wojwozniak/data-visualization'
-            secondLinkTitle='Certificate' />
-        } />
-      <TimelineSection title="March - May 2022"
-        children={
-          <>
-            <TimelineItem
-              projectName="Scout event website"
-              description='I created a website for a big scout event in Poland. It was my first semi-professional project and first "big" website. I used HTML, CSS, JavaScript to create it - I also used Wordpress as a CMS.'
-              link='https://pustynnaburza.dabrowagornicza.zhp.pl/'
-              linkTitle='Website'
-              secondLink='https://github.com/wojwozniak/wp-pustynnaburza'
-              secondLinkTitle='Github Repository' />
-            <TimelineItem
-              projectName="React Course"
-              description='I kept learning with Freecodecamp courses - this time I finished their React course and created five apps to get their certification. Few months later I reworked certification websites to use typescript and hooks. I linked my favourite app from this course and my certificate.'
-              link="https://wojwozniak.com/tsx-calculator/"
-              linkTitle='React Calculator'
-              secondLink='https://www.freecodecamp.org/certification/wojwozniak/front-end-libraries'
-              secondLinkTitle='Certificate'
-            />
-          </>
-        } />
-      <TimelineSection title="October 2021 - Febuary 2022"
-        children={
-          <TimelineItem
-            projectName='Web Development - Freecodecamp courses'
-            description={`In October 2021 I decided to start learning web development alongside my standard university courses. I learned about FreeCodeCamp and started doing their courses. After few months I finished their Responsive Web Design and JavaScript Algorithms and Data Structures courses.`}
-            link='https://www.freecodecamp.org/certification/wojwozniak/responsive-web-design'
-            linkTitle='First Certificate'
-            secondLink='https://www.freecodecamp.org/certification/wojwozniak/javascript-algorithms-and-data-structures'
-            secondLinkTitle='Second Certificate' />
-        } />
-      <TimelineSection title="Up to August 2021"
-        children={
-          <TimelineItem
-            projectName='First steps with Computer Science'
-            description="Up to this date I learned C++ - used it to pass high school final exams which allowed me to start studying Computer Science at University" />
-        } />
+    <>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 p-4">
+        <ProjectComponent
+          title="Example title"
+          date="Date"
+          screenshotUrl="http://placehold.co/400"
+          description={
+            <div>
+              <p>This is a very long HTML description with <strong>formatting</strong> and <a href="#">links</a>.
+              </p>
+            </div>
+          }
+        />
+      </div>
       <Footer />
-    </div>
-  );
-}
+    </>
 
-export default App;
+  );
+};
+
+export default MyApp;
