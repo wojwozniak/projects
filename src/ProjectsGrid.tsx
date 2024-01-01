@@ -42,7 +42,7 @@ const ProjectsGrid = () => {
         description={
           <div>
             <p>
-              Bezier curve editor. It allows to create and edit bezier curves. It is built with React and Typescript. It uses Canvas API to draw curves and is styled with Tailwind CSS.
+              Bezier curve editor. It allows to create and edit bezier curves. It is built with React and Typescript. It uses Canvas API to draw curves and is styled with Tailwind CSS. It uses custom implementation of De Casteljau's algorithm to render curves.
             </p>
             <p>
               It allows to add, remove and move points. It works with unlimited number of layers - so we can have multiple curves on the same canvas. It also has feature to render "helper" lines. You can also export your image as a PNG or SVG file (SVG is optimised so it can be used as font generator).
