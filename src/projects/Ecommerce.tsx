@@ -12,13 +12,13 @@ const Ecommerce = () => {
       description={
         <div>
           <p>
-            E-commerce website (built exclusively with backend technologies). Created with Node.js, used MongoDB database. It has a fully functional shopping cart, user authentication, admin panel and more.
+            This e-commerce website, focusing purely on backend technologies, was developed using Node.js and incorporates a MongoDB database. It features a comprehensive shopping cart, secure user authentication, an admin panel, and several other functionalities.
           </p>
-          <p>
-            User authentication is done with custom middleware (and password hashing with bcrypt). Admin panel is protected with a custom middleware as well. The website is styled with Tailwind CSS. It uses EJS as a templating engine.
+          <p className='mt-4'>
+            For user authentication, it employs custom middleware along with bcrypt for password hashing. The admin panel also utilizes custom middleware for additional security. The website's design is crafted using Tailwind CSS, and it leverages EJS as its templating engine.
           </p>
-          <p>
-            It is not hosted anywhere, but if you want to play with it, you can check the source code on Github and run it locally. (guide in README.md)
+          <p className='mt-4'>
+            While this website isn't hosted online, those interested in exploring its features can access the source code on Github. Instructions for local deployment and operation are provided in the README.md file.
           </p>
           <p className='flex flex-row items-center justify-center gap-2'>
             <a href="https://github.com/wojwozniak/nodejs-shop"

@@ -12,13 +12,13 @@ const D3 = () => {
       description={
         <div>
           <p>
-            I have created a collection of charts to learn D3.js library. Data for charts is from FreeCodeCamp - I have finished their Data Visualization course and did those charts as a final project to get a certificate.
+            I've developed a series of charts as a practical exercise to master the D3.js library. The data for these charts were sourced from FreeCodeCamp. This project was part of the final assignment for their Data Visualization course, which I completed to earn a certificate.
           </p>
-          <p>
-            Few months later I decided to rewrite them using Vue.js. I have also made them into a single website for easier navigation.
+          <p className='mt-4'>
+            A few months after completing the course, I decided to give the charts a new look by rewriting them with Vue.js. To enhance user experience, I integrated all of these charts into a single website, allowing for more streamlined navigation.
           </p>
-          <p>
-            Website is optimised for desktop devices - a lot of information is displayed on hover.
+          <p className='mt-4'>
+            The website is tailored for desktop use, offering information that becomes visible upon hovering over different elements.
           </p>
           <ul className='flex flex-row justify-between w-full px-4 pt-4'>
             <li className='flex flex-row items-center justify-center gap-2'>

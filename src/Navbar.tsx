@@ -12,7 +12,7 @@ const Navbar: React.FC = () => {
         <h1 style={{ lineHeight: '1.5em' }}>wojwozniak | My projects</h1>
         <div style={{ display: 'flex', alignItems: 'center', lineHeight: '1.5em' }}>
           <span className="mr-2">
-            {theme === 'dark' ? 'Dark mode on' : 'Dark mode off'}
+            Dark mode
           </span>
           <Switch checked={theme === 'dark'}
             onChange={toggleTheme} />

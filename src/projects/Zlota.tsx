@@ -12,10 +12,10 @@ const Zlota = () => {
       description={
         <div>
           <p>
-            A responsive website I have developed for a scout team to replace their old website. I have created it using Wordpress, PHP, HTML, CSS and Javascript. It has a lot of custom features and reusable components created with block plugin (such as custom post types, calendar, galleries for each year)
+            I developed a responsive website for a scout team, intended as an upgrade from their previous site. This project was realized using WordPress, PHP, HTML, CSS, and JavaScript. It boasts a variety of custom features and reusable components, all crafted through a block plugin. Notable elements include custom post types, an integrated calendar, and year-specific galleries.
           </p>
-          <p>
-            Along this website I have also created series of guides for the team members to help them with website maintenance and content creation.
+          <p className='mt-4'>
+            Alongside the website, I also compiled a series of guides designed to assist team members in website maintenance and content creation, ensuring ease of use and ongoing management.
           </p>
           <ul className='flex flex-row justify-between w-full px-4 pt-4'>
             <li className='flex flex-row items-center justify-center gap-2'>
